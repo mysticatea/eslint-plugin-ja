@@ -1,0 +1,244 @@
+{
+    "accessor-pairs": {
+        "getter": "ゲッターが必要です。",
+        "setter": "セッターが必要です。"
+    },
+    "array-bracket-newline": {
+        "unexpectedOpeningLinebreak": "'['の後に空白を書かないで下さい。",
+        "unexpectedClosingLinebreak": "']'の前に空白を書かないで下さい。",
+        "missingOpeningLinebreak": "'['の後に空白が必要です。",
+        "missingClosingLinebreak": "']'の前に空白が必要です。"
+    },
+    "array-bracket-spacing": {
+        "unexpectedSpaceAfter": "'{{tokenValue}}'の後に空白を書かないで下さい。",
+        "unexpectedSpaceBefore": "'{{tokenValue}}'の前に空白を書かないで下さい。",
+        "missingSpaceAfter": "'{{tokenValue}}'の後に空白が必要です。",
+        "missingSpaceBefore": "'{{tokenValue}}'の前に空白が必要です。"
+    },
+    "array-callback-return": {
+        "expectedAtEnd": "関数'{{name}}'の末尾に値を返す'return'文が必要です。",
+        "expectedInside": "関数'{{name}}'は値を返す必要があります。",
+        "expectedReturnValue": "関数'{{name}}'は値を返す必要があります。"
+    },
+    "array-element-newline": {
+        "unexpectedLineBreak": "ここで改行しないで下さい。",
+        "missingLineBreak": "ここで改行して下さい。"
+    },
+    "arrow-body-style": {
+        "unexpectedOtherBlock": "アロー関数本体をブロックで囲む必要はありません。",
+        "unexpectedEmptyBlock": "アロー関数本体をブロックで囲む必要はありません。`=> undefined`のように書いて下さい。",
+        "unexpectedObjectBlock": "アロー関数本体をブロックで囲む必要はありません。`=>`の直後に括弧で囲んで戻り値を書いて下さい。",
+        "unexpectedSingleBlock": "アロー関数本体をブロックで囲む必要はありません。`=>`の直後に戻り値を書いて下さい。",
+        "expectedBlock": "アロー関数本体をブロックで囲む必要があります。"
+    },
+    "arrow-parens": {
+        "unexpectedParens": "引数が1つの時はカッコで囲まないで下さい。",
+        "expectedParens": "アロー関数の引数リストをカッコで囲んで下さい。",
+        "unexpectedParensInline": "アロー関数本体がブロックではない場合、引数が1つの時はカッコで囲まないで下さい。",
+        "expectedParensBlock": "アロー関数本体がブロックである場合、引数リストをカッコで囲んで下さい。"
+    },
+    "arrow-spacing": {
+        "expectedBefore": "'=>'の前に空白が必要です。",
+        "unexpectedBefore": "'=>'の前に空白を書かないで下さい。",
+        "expectedAfter": "'=>'の後に空白が必要です。",
+        "unexpectedAfter": "'=>'の後に空白を書かないで下さい。"
+    },
+    "block-scoped-var": {
+        "outOfScope": "変数'{{name}}'を宣言したブロックの外で利用しないで下さい。"
+    },
+    "brace-style": {
+        "nextLineOpen": "'{'の前に改行を書かないで下さい。",
+        "sameLineOpen": "'{'の前に改行が必要です。",
+        "blockSameLine": "'{'の後に改行が必要です。",
+        "nextLineClose": "'}'の後に改行を書かないで下さい。",
+        "singleLineClose": "'}'の前に改行が必要です。",
+        "sameLineClose": "'}'の後に改行が必要です。"
+    },
+    "callback-return": {
+        "missingReturn": "'return'文の中でコールバック関数を呼び出して下さい。"
+    },
+    "camelcase": {
+        "notCamelCase": "識別子'{{name}}'をキャメルケースにしてください。"
+    },
+    "capitalized-comments": {
+        "unexpectedLowercaseComment": "コメント文は大文字で開始して下さい。",
+        "unexpectedUppercaseComment": "コメント分は小文字で開始して下さい。"
+    },
+    "class-methods-use-this": {
+        "missingThis": "メソッド'{{name}}'で'this'が使用されませんでした。関数または静的メソッドにすることを検討して下さい。"
+    },
+    "comma-dangle": {
+        "unexpected": "末尾カンマを書かないで下さい。",
+        "missing": "末尾カンマが必要です。"
+    },
+    "comma-style": {
+        "unexpectedLineBeforeAndAfterComma": "','の前後両方に改行があります。片方削除して下さい。",
+        "expectedCommaFirst": "','は行頭に書いて下さい。",
+        "expectedCommaLast": "','は行末に書いて下さい。"
+    },
+    "complexity": {
+        "complex": "関数'{{name}}'の複雑度が'{{complexity}}'を超えています。"
+    },
+    "computed-property-spacing": {
+        "unexpectedSpaceBefore": "'{{tokenValue}}'の前に空白を書かないで下さい。",
+        "unexpectedSpaceAfter": "'{{tokenValue}}'の後に空白を書かないで下さい。",
+        "missingSpaceBefore": "'{{tokenValue}}'の前に空白が必要です。",
+        "missingSpaceAfter": "'{{tokenValue}}'の後に空白が必要です。"
+    },
+    "consistent-return": {
+        "missingReturn": "関数'{{name}}'の末尾に値を返す'return'文が必要です。",
+        "missingReturnValue": "関数'{{name}}'は値を返す必要があります。",
+        "unexpectedReturnValue": "ここより前に値を返さない'return'文があります。関数'{{name}}'は値を返さないで下さい。"
+    },
+    "consistent-this": {
+        "aliasNotAssignedToThis": "変数名'{{name}}'は'this'の別名として利用して下さい。",
+        "unexpectedAlias": "変数名'{{name}}'を'this'の別名として利用しないで下さい。"
+    },
+    "constructor-super": {
+        "missingSome": "'super()'がない実行パスがあります。",
+        "missingAll": "'super()'が必要です。",
+        "duplicate": "'super()'が重複しています。",
+        "badSuper": "'super()'を書くことはできません。このクラスは非関数から継承しています。",
+        "unexpected": "'super()'を書くことはできません。"
+    },
+    "curly": {
+        "missingCurlyAfter": "キーワード'{{name}}'の後に'{'が必要です。",
+        "missingCurlyAfterCondition": "'{{name}}'文には'{'が必要です。",
+        "unexpectedCurlyAfter": "キーワード'{{name}}'の後に'{'を書かないで下さい。",
+        "unexpectedCurlyAfterCondition": "'{{name}}'文に'{'を書かないで下さい。"
+    },
+    "default-case": {
+        "missingDefaultCase": "'default'句が必要です。"
+    },
+    "dot-location": {
+        "expectedDotAfterObject": "'.'は行末に書いて下さい。",
+        "expectedDotBeforeProperty": "'.'は行頭に書いて下さい。"
+    },
+    "dot-notation": {
+        "useDot": "'.{{key}}'のように書いて下さい。",
+        "useBrackets": "'[\"{{key}}\"]'のように角括弧を使って下さい。"
+    },
+    "eol-last": {
+        "missing": "ファイルの末尾に空行が必要です。",
+        "unexpected": "ファイルの末尾に空行を書かないで下さい。"
+    },
+    "eqeqeq": {
+        "unexpected": "演算子'{{expectedOperator}}'を使って下さい。"
+    },
+    "no-alert": {
+        "unexpected": "関数'{{name}}'を使わないで下さい。"
+    },
+    "no-array-constructor": {
+        "preferLiteral": "配列リテラル'[]'を使って下さい。"
+    },
+    "no-await-in-loop": {
+        "unexpectedAwait": "ループ構文で'await'式を使うと並列で実行されません。"
+    },
+    "no-bitwise": {
+        "unexpected": "演算子'{{operator}}'を使わないで下さい。"
+    },
+    "no-buffer-constructor": {
+        "deprecated": "コンストラクタ'{{expr}}'は非推奨です。代わりに'Buffer.from()', 'Buffer.alloc()', 'Buffer.allocUnsafe()'のいずれかを使って下さい。"
+    },
+    "no-caller": {
+        "unexpected": "プロパティ'arguments.{{prop}}'を使わないで下さい。"
+    },
+    "no-case-declarations": {
+        "unexpected": "'switch'文の内部で変数宣言を使う場合は'case'/'default'句をブロックで囲んで下さい。"
+    },
+    "no-catch-shadow": {
+        "mutable": "変数'{{name}}'は外側のスコープで既に定義されています。IE8以前ではブラウザのバグにより意図しない動作の原因になります。"
+    },
+    "no-class-assign": {
+        "class": "クラス'{{name}}'へ代入しないで下さい。"
+    },
+    "no-compare-neg-zero": {
+        "unexpected": "'-0'と比較するときは'Object.is()'関数を使って下さい。"
+    },
+    "no-cond-assign": {
+        "unexpected": "条件式の中で変数への代入を書かないで下さい。代入式をカッコで囲むと許可されます。",
+        "missing": "条件式の中で変数への代入を書かないで下さい。"
+    },
+    "no-confusing-arrow": {
+        "confusing": "'=>'の直後に三項演算子を書かないで下さい。比較演算子と紛らわしいです。"
+    },
+    "no-console": {
+        "unexpected": "'console'を使わないで下さい。"
+    },
+    "no-const-assign": {
+        "const": "'const'変数'{{name}}'へ代入しないで下さい。"
+    },
+    "no-constant-condition": {
+        "unexpected": "条件式が変化しません。"
+    },
+    "no-continue": {
+        "unexpected": "'continue'文を使わないで下さい。"
+    },
+    "no-control-regex": {
+        "unexpected": "正規表現で制御文字'{{controlChars}}'を使わないで下さい。"
+    },
+    "no-debugger": {
+        "unexpected": "'debugger'文を使わないで下さい。"
+    },
+    "no-delete-var": {
+        "unexpected": "`delete`演算子を変数自体に使わないでください。"
+    },
+    "no-div-regex": {
+        "unexpected": "正規表現を'/='で開始しないで下さい。代入演算子'/='と紛らわしいです。"
+    },
+    "no-dupe-args": {
+        "unexpected": "仮引数'{{name}}'が重複しています。"
+    },
+    "no-dupe-class-members": {
+        "unexpected": "クラスメンバー'{{name}}'が重複しています。"
+    },
+    "no-dupe-keys": {
+        "unexpected": "プロパティ'{{name}}'が重複しています。"
+    },
+    "no-duplicate-case": {
+        "unexpected": "'case'句の値が重複しています。"
+    },
+    "no-else-return": {
+        "unexpected": "直前の'if'文に'return'文があるため'else'句は不要です。"
+    },
+    "no-empty-character-class": {
+        "unexpected": "空の文字クラス'[]'を書かないで下さい。"
+    },
+    "no-empty-function": {
+        "unexpected": "空の関数を書かないで下さい。または、関数本体にコメントを書いて下さい。"
+    },
+    "no-empty-pattern": {
+        "unexpected": "分割代入の左辺に空のオブジェクトリテラル・配列リテラルを書かないで下さい。"
+    },
+    "no-empty": {
+        "unexpected": "空のブロックを書かないで下さい。または、ブロック内にコメントを書いて下さい。"
+    },
+    "no-eq-null": {
+        "unexpected": "演算子'==='/'!=='を使って'null'と比較して下さい。"
+    },
+    "no-eval": {
+        "unexpected": "'eval'を使わないで下さい。"
+    },
+    "no-ex-assign": {
+        "unexpected": "仮引数に代入しないで下さい。"
+    },
+    "no-extend-native": {
+        "unexpected": "'{{builtin}}.prototype'を書き換えないで下さい。"
+    },
+    "no-extra-bind": {
+        "unexpected": "この`.bind()`は不要です。関数内で'this'が使われていません。"
+    },
+    "no-extra-boolean-cast": {
+        "unexpectedCall": "ここでは明示的な'boolean'型へのキャストは不要です。",
+        "unexpectedNegation": "ここでは明示的な'boolean'型へのキャストは不要です。"
+    },
+    "no-extra-label": {
+        "unexpected": "ラベル'{{name}}'は不要です。"
+    },
+    "no-extra-parens": {
+        "unexpected": "この括弧は不要です。"
+    },
+    "no-extra-semi": {
+        "unexpected": "このセミコロンは不要です。"
+    }
+}

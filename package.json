@@ -1,0 +1,39 @@
+{
+  "name": "eslint-plugin-ja",
+  "version": "0.0.0",
+  "description": "Experimental Japanese translation for eslint core rules.",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "main": "index.js",
+  "files": [
+    "translation"
+  ],
+  "peerDependencies": {
+    "eslint": ">=4.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-mysticatea": "^13.0.2",
+    "lodash": "^4.17.4",
+    "mocha": "^5.0.0"
+  },
+  "scripts": {
+    "extract": "node scripts/extract-new-messages",
+    "test": "mocha test/cli-engine.js && mocha test/variables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysticatea/eslint-plugin-ja.git"
+  },
+  "keywords": [],
+  "author": "Toru Nagashima (https://github.com/mysticatea)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mysticatea/eslint-plugin-ja/issues"
+  },
+  "homepage": "https://github.com/mysticatea/eslint-plugin-ja#readme",
+  "dependencies": {
+    "semver": "^5.5.0"
+  }
+}
