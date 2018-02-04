@@ -18,7 +18,6 @@
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-mysticatea": "^13.0.2",
-    "lodash": "^4.17.4",
     "mocha": "^5.0.0"
   },
   "scripts": {
