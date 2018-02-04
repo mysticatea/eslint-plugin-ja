@@ -5,7 +5,6 @@
 "use strict"
 
 const Module = require("module")
-const TESTER_PATH = require.resolve("eslint/lib/testers/rule-tester")
 
 /**
  * 与えられたコンテキストで、`eslint-plugin-ja`がこのプラグインを指すようにセットアップします。
@@ -29,27 +28,4 @@ module.exports.installThisPlugin = (before, after) => { //eslint-disable-line no
     after(() => {
         Module._findPath = originalFindPath
     })
-}
-
-/**
- * 与えられた関数を実行している間だけ、RuleTester を `./rule-tester.js` に差し替えます。
- * @param {function} f 実行する関数
- * @returns {void}
- */
-module.exports.withOverridenRuleTester = (f) => {
-    const originalFindPath = Module._findPath
-    Module._findPath = function() {
-        const path = originalFindPath.apply(this, arguments)
-        if (path === TESTER_PATH) {
-            return require.resolve("./rule-tester.js")
-        }
-        return path
-    }
-
-    try {
-        f()
-    }
-    finally {
-        Module._findPath = originalFindPath
-    }
 }
