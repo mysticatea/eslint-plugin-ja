@@ -12,6 +12,9 @@
   "peerDependencies": {
     "eslint": ">=4.17.0"
   },
+  "dependencies": {
+    "semver": "^5.5.0"
+  },
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-mysticatea": "^13.0.2",
@@ -20,7 +23,12 @@
   },
   "scripts": {
     "extract": "node scripts/extract-new-messages",
-    "test": "mocha test/cli-engine.js && mocha test/variables.js"
+    "lint": "eslint .",
+    "pretest": "npm run -s lint",
+    "test": "mocha test/cli-engine.js && mocha test/variables.js --repoter dot",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "watch": "mocha test/variables.js --repoter dot --watch --growl"
   },
   "repository": {
     "type": "git",
@@ -32,8 +40,5 @@
   "bugs": {
     "url": "https://github.com/mysticatea/eslint-plugin-ja/issues"
   },
-  "homepage": "https://github.com/mysticatea/eslint-plugin-ja#readme",
-  "dependencies": {
-    "semver": "^5.5.0"
-  }
+  "homepage": "https://github.com/mysticatea/eslint-plugin-ja#readme"
 }
