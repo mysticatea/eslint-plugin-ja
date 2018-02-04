@@ -27,7 +27,7 @@ function getVariables(text) {
     return variables
 }
 
-describe("変数記述", () => {
+describe("翻訳前のメッセージに存在しない変数が使われていないか調べます。", () => {
     for (const ruleId of Object.keys(translation)) {
         const jaMessages = translation[ruleId]
         const enMessages = rules.get(ruleId).meta.messages
@@ -38,13 +38,14 @@ describe("変数記述", () => {
             const jaVariables = getVariables(jaMessage)
             const enVariables = getVariables(enMessage)
 
-            describe(`${ruleId}/${messageId}`, () => {
-                for (const variable of jaVariables) {
-                    it(`変数'{{${variable}}}'が翻訳前のメッセージに存在すべきです。`, () => {
-                        assert(enVariables.has(variable))
-                    })
-                }
-            })
+            for (const variable of jaVariables) {
+                it(`${ruleId}/${messageId} {{${variable}}}`, () => {
+                    assert(
+                        enVariables.has(variable),
+                        `翻訳前のメッセージに存在しない変数'{{${variable}}}'が見つかりました。`
+                    )
+                })
+            }
         }
     }
 })

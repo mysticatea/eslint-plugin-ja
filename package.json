@@ -16,6 +16,7 @@
     "semver": "^5.5.0"
   },
   "devDependencies": {
+    "@types/node": "^9.4.0",
     "eslint": "^4.17.0",
     "eslint-config-mysticatea": "^13.0.2",
     "mocha": "^5.0.0"
@@ -24,10 +25,11 @@
     "extract": "node scripts/extract-new-messages",
     "lint": "eslint .",
     "pretest": "npm run -s lint",
-    "test": "mocha test/cli-engine.js && mocha test/variables.js --repoter dot",
+    "test": "npm run -s test:mocha",
+    "test:mocha": "mocha test/*.js --reporter dot",
     "preversion": "npm test",
     "postversion": "git push && git push --tags",
-    "watch": "mocha test/variables.js --repoter dot --watch --growl"
+    "watch": "npm run -s test:mocha -- --watch --growl"
   },
   "repository": {
     "type": "git",
